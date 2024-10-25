@@ -10,10 +10,9 @@ public class ZasobnikPole<T> {
         this.index = -1; //prvni polozke inkrementuje a da prvni prvek na index 0
     }
 
-    public void push(T elem) {
+    public void push(T param) {
         this.index++;
-        arr[this.index] = elem;
-
+        arr[this.index] = param;
     }
 
     public T pop() {

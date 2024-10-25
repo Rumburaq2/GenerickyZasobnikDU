@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Hello world!");
 
         Integer i = 0;
-        Zasobnik<Integer> zasobnink = new Zasobnik();
+        Zasobnik<Integer> zasobnink = new Zasobnik<Integer>();
 
         System.out.println(zasobnink);
         zasobnink.push(6);
@@ -15,7 +15,7 @@ public class Main {
         zasobnink.push(8);
         System.out.println(zasobnink);
 
-        Zasobnik<String > zasobnink2 = new Zasobnik();
+        Zasobnik<String> zasobnink2 = new Zasobnik<String>();
 
         System.out.println(zasobnink2);
         zasobnink2.push("hello");
@@ -42,6 +42,28 @@ public class Main {
         System.out.println(zasobninkPole);
         zasobninkPole.push(8);
         System.out.println(zasobninkPole);
+
+        /*
+
+
+        Tovarna tovarna = new ZasobnikFactory();
+        Zasobnik<Integer> z = (Zasobnik<Integer>) tovarna.vyrobZasobnik("Arraylist");
+
+        System.out.println(z);
+        z.push(6);
+        System.out.println(z);
+        z.push(7);
+        System.out.println(z);
+        i = z.pop();
+        System.out.println(i);
+        z.push(8);
+        System.out.println(z);
+
+         */
+
+
+
+
 
 
     }

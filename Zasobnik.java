@@ -4,6 +4,7 @@ public class Zasobnik<T> {
 
     private ArrayList<T> arrayList = new ArrayList<T>();
 
+
     public void push(T param){
         arrayList.add(param);
     }
