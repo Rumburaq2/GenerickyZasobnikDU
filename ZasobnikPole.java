@@ -9,21 +9,6 @@ public class ZasobnikPole<T> implements Zasobnik<T> {
         this.index = -1; //prvni polozke inkrementuje a da prvni prvek na index 0
     }
 
-    /*
-    public void push(T elem) {
-        this.index++;
-        arr[this.index] = elem;
-    }
-
-    public T pop() {
-        T elem = arr[index];
-        arr[index] = null;
-        this.index--;
-        return elem;
-    }
-
-     */
-
     @Override
     public String toString() {
         return "ZasobnikPole{" +
@@ -36,7 +21,6 @@ public class ZasobnikPole<T> implements Zasobnik<T> {
     public void push(T prvek) {
         this.index++;
         arr[this.index] = prvek;
-
     }
 
     @Override
@@ -49,6 +33,6 @@ public class ZasobnikPole<T> implements Zasobnik<T> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return index == -1;
     }
 }
