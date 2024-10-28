@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
+        /*
         Integer i = 0;
         ZasobnikArr<Integer> zasobnink = new ZasobnikArr();
 
@@ -39,6 +40,49 @@ public class Main {
         System.out.println(zasobninkPole);
         zasobninkPole.push(8);
         System.out.println(zasobninkPole);
+
+        System.out.println();
+        System.out.println("fatory");
+        System.out.println("--------------------");
+
+         */
+
+        TovarnaNaZasobniky tovarna = new TovarnaNaZasobniky();
+        Zasobnik<Integer> zas = tovarna.vyrobZasobnik("list");
+        System.out.println(zas);
+        zas.push(6);
+        System.out.println(zas);
+        zas.push(7);
+        System.out.println(zas);
+        zas.push(8);
+        System.out.println(zas);
+        Integer d = zas.pop();
+        System.out.println(d);
+        //zas.push(8);
+        System.out.println(zas);
+
+
+
+        Zasobnik<String> stringZasobnik = tovarna.vyrobZasobnik("list");
+        System.out.println(stringZasobnik);
+        stringZasobnik.push("hello");
+        System.out.println(stringZasobnik);
+        stringZasobnik.push("world");
+        System.out.println(stringZasobnik);
+        String g = stringZasobnik.pop();
+        System.out.println(g);
+        System.out.println(stringZasobnik);
+
+        Zasobnik<Integer> zasPole = tovarna.vyrobZasobnik("pole", 10);
+        System.out.println(zasPole);
+        zasPole.push(6);
+        System.out.println(zasPole);
+        zasPole.push(7);
+        System.out.println(zasPole);
+        Integer p = zasPole.pop();
+        System.out.println(p);
+        System.out.println(zasPole);
+
     }
 
 }
